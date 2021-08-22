@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Web_Asgm
+namespace PennyJuice
 {
 
 

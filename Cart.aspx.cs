@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace Web_Asgm
+namespace PennyJuice
 {
     public partial class Cart : System.Web.UI.Page
     {
@@ -41,7 +41,7 @@ namespace Web_Asgm
 
                     int grandTotalAmt;
                     grandTotalAmt = temp;
-                    grandTotal.Text = "Grand Total: RM " + grandTotalAmt.ToString() + ".00";
+                    grandTotal.Text = "Grand Total: $ " + grandTotalAmt.ToString() + ".00";
                 }
                 else
                 {
@@ -82,7 +82,7 @@ namespace Web_Asgm
 
                         int grandTotalAmt;
                         grandTotalAmt = temp;
-                        grandTotal.Text = "Grand Total: RM " + grandTotalAmt.ToString() + ".00";
+                        grandTotal.Text = "Grand Total: $ " + grandTotalAmt.ToString() + ".00";
                     }
                     else
                     {
@@ -114,7 +114,7 @@ namespace Web_Asgm
                             grandTotalAmt = temp;
                             Session["grandTotalVal"] = grandTotalAmt;
                             Session["grandQuantity"] = grandQuanAmt;
-                            grandTotal.Text = "Grand Total: RM " + grandTotalAmt.ToString() + ".00";
+                            grandTotal.Text = "Grand Total: $ " + grandTotalAmt.ToString() + ".00";
                         }
                         else if (cartQuanSelected > checkStock)
                         {
