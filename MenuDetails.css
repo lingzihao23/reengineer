@@ -1,0 +1,77 @@
+﻿body {
+    background-image: url('media files/galleryBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+hArtNameLbl {
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    font-family: 'Brush Script MT';
+}
+
+hArtIdlbl{
+    visibility:hidden;
+}
+
+hErrorQuan {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    font-family: 'Bodoni MT';
+}
+
+hView {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: 'Bodoni MT';
+}
+
+.detailTable {
+    width: 100%;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom:50px;
+    padding-top:50px;
+    border: solid;
+}
+
+.detailImg {
+    width: 587px;
+}
+
+.detailInfo {
+    height: 26px;
+    width: 221px;
+    font-family: 'Bodoni MT';
+}
+
+.detailBtn {
+    background-image: url('media%20files/button1.jpg');
+    text-align: center;
+    width: 320px;
+    height: 43px;
+}
+
+.detailBtn a{
+    text-decoration:none;
+    color:black;
+}
+
+.detailBtn:hover{
+    background-image: url('media files/button2.jpg');
+}
+
+.detailBtnTable{
+    width:20%;
+}
+
+.quantityBox{
+    width:10%;
+}
+
+
+
