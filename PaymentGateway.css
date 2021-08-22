@@ -1,0 +1,78 @@
+﻿body {
+    background-image: url('media files/galleryBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: #f2f2f2;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 80vh;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+}
+
+
+hPayment{
+    text-align:center;
+    font-family:'Bodoni MT';
+    font-size:25px;
+    text-decoration-color:none;
+    color:black;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.paymentBtns {
+    background-image: url('media%20files/button1.jpg');
+    text-align: center;
+    width: 320px;
+    height: 43px;
+}
+
+.paymentBtns a{
+    text-decoration:none;
+    color:black;
+}
+
+.paymentBtns:hover{
+    background-image: url('media files/button2.jpg');
+}
+
+.paymentTable {
+    border-collapse: separate;
+    border-spacing: 1px;   
+}
+
+.paymentTextbox {
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color:white;
+}
+
+.addressTextbox {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.paymentLbls {
+    padding-left: 150px;
+    display: block;
+}
+
+.paymentTQ{
+    font-weight:bold;
+}
+
+.paymentVS {
+    padding-left: 450px;
+    position: relative;
+}
