@@ -1,0 +1,98 @@
+﻿body {
+    background-image: url('media files/galleryBackground.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.custGalleryBanner {
+    height:300px; 
+    width: 100%;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 25px;
+    width: 100%;
+}
+
+.galleryBtns {
+    background-image: url('media files/button1.jpg');
+    text-align: center;
+}
+
+.galleryBtns a{
+    text-decoration:none;
+    color:black;
+}
+
+.galleryBtns:hover{
+    background-image: url('media files/button2.jpg');
+}
+
+.artInfo1 , .artInfo2{
+    font-family:'Bodoni MT';
+    font-size:17px;
+}
+
+.aboutUsLink {
+    text-decoration: none;
+}
+
+.aboutUsLink a:hover {
+    color: red;
+    text-decoration:none;
+}
+
+hFilter {
+    padding-left: 13%;
+    font-family: 'Bodoni MT';
+    font-size: 19px;
+}
+
+.filterDropdown{
+    width: 150px;
+}
+
+hSort {
+    padding-left: 100px;
+    font-family: 'Bodoni MT';
+    font-size: 19px;
+}
+
+.sortDropdown {
+    width: 150px;
+}
+
+hNowViewing {
+    font-family: 'Bodoni MT';
+    font-size: 30px;
+}
+
+.custGalleryViewing {
+    font-family: 'Brush Script MT';
+    font-size: 30px;
+}
+
+hConfirm {
+    padding-left: 100px;
+}
+
+.filterSortConfirm {
+    background-image: url('media files/button1.jpg');
+    text-align: center;
+    width: 150px;
+    font-family: 'Bodoni MT';
+    font-size: 19px;
+}
+
+.filterSortConfirm a {
+    text-decoration: none;
+    color: black;
+}
+
+.filterSortConfirm:hover {
+    background-image: url('media files/button2.jpg');
+}
