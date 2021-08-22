@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="PennyJuice.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title></title>
+    <link href="Master.css" rel="stylesheet" type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color:aliceblue">
+
+	    <form id="form1" runat="server">
+        <header>
+		    <div id="logoNavi">
+                <h1><img id="logo" src="media files/pennyLogo.png" /></h1>
+                <div id="loginNavi"><asp:ContentPlaceHolder ID="LoginButtons" runat="server"></asp:ContentPlaceHolder></div>
+		    </div>
+
+            <div id="headerNavi">			    
+                <div id="menuNav">
+                    <asp:Button CssClass="headerNaviBtn" ID="homeBtn" runat="server" Text="Home" PostBackUrl="~/Homepage.aspx" />
+                    <asp:Button CssClass="headerNaviBtn" ID="galleryBtnCust" runat="server" Text="Juice Menu" PostBackUrl="~/Menu.aspx" />
+                    <asp:Button CssClass="headerNaviBtn" ID="cartBtn" runat="server" Text="My Cart" PostBackUrl="~/Cart.aspx" />
+                    <asp:Button CssClass="headerNaviBtn" ID="profileBtn" runat="server" Text="My Profile" PostBackUrl=""/>
+                </div>
+            </div>  
+	    </header>
+        
+        <br /> <br /> <br /> <br />
+		<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </form>
+
+    <footer>
+        <ul id="leftList">
+        <li><a class="aboutUsLink" href="AboutUs.aspx"> About Us</a></li>
+        <li><a class="aboutUsLink" href="ContactUs.aspx">Contact Us</a></li>
+        </ul>
+
+        <ul id="rightList">
+        <li><a href="https://www.facebook.com/PENNYJUICE/"><img class="socialImg"  src="media files/fblogo.png"/></a></li>
+        <li><a href="https://twitter.com/1PENNYJUICE"><img class="socialImg"  src="media files/twitterlogo.png"/></a></li>
+        </ul>
+    </footer>
+     <p id="copyright">
+         Privacy Policy | Cookie Policy | Conditions of Use | Notice and Take Down Policy | Website Accessibility Policy
+         <br /><br />
+         © 2021 The content on this website is owned by us and our licensors. Do not copy any content (including images) without our consent.
+     </p>
+</body>
+</html>
