@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Web_Asgm
+namespace PennyJuice
 {
     public partial class Login : System.Web.UI.Page
     {
@@ -84,7 +84,7 @@ namespace Web_Asgm
                                     Session["UserName"] = dtrUserData["Username"];
                                     Session["userIdentityType"] = dtrUserData["userIdentityType"];
                                     Session["Email"] = dtrUserData["Email"];
-                                    Response.Redirect("ClientGallery.aspx");
+                                    Response.Redirect("Menu.aspx");
                                 }
                                 else if (dtrUserData["userIdentityType"].ToString() == "C")
                                 {
@@ -105,7 +105,7 @@ namespace Web_Asgm
                                     Session["UserName"] = dtrUserData["Username"];
                                     Session["userIdentityType"] = dtrUserData["userIdentityType"];
                                     Session["Email"] = dtrUserData["Email"];
-                                    Response.Redirect("CustomerGallery.aspx");
+                                    Response.Redirect("Menu.aspx");
                                 }
 
                             }

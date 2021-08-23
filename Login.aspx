@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Web_Asgm.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PennyJuice.Login" %>
 
 <!DOCTYPE html>
 
@@ -37,7 +37,7 @@
              <table style="width:100%;">
                  <tr>
                      <td class="auto-style2">
-                         <a href="Homepage.aspx">< Back</a>
+                         <a href="Menu.aspx">< Back</a>
                      </td>
                      <td>&nbsp;</td>
                  </tr>
