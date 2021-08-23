@@ -1,0 +1,62 @@
+﻿body {
+}
+
+.loginBackground {
+    margin-top:-20px;
+    margin-left:-8px;
+    height: 150%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('media files/background.jpg');
+    background-position:center;
+    background-size:cover;
+    position:absolute;
+
+}
+.loginDiv {
+    height: 450px;
+    width: 300px;
+    margin: 7% auto;
+    background-color: white;
+    padding: 5px;
+    position: relative;
+    -webkit-animation: fadein 2s;
+    text-align:center;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.button {
+    //background-color: #4CAF50;
+    background-color:transparent;
+    border-radius:30px;
+    box-shadow:0 0 20px 9px #ffffff;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+}
+.input-group {
+    margin:5px 0px 5px 10px;
+    width: 280px;
+    height: 380px;
+}
+
+.input-field{
+    width:80%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom:1px solid #808080;
+    background-color:transparent;
+}

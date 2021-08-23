@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LoginButtonControl.ascx.cs" Inherits="PennyJuice.LoginButtonControl" %>
+<asp:Button CssClass="loginBtn" ID="Button1" runat="server" Text="Login" PostBackUrl="~/Login.aspx" /><asp:Button CssClass="loginBtn" PostBackUrl="~/Register.aspx" ID="Button2" runat="server" Text="Register"  />
