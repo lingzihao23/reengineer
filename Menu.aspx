@@ -1,18 +1,14 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="Web_Asgm.CustomerGallery" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="PennyJuice.Menu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="server">
     <link href="Menu.css" rel="stylesheet" type="text/css">
-
-
-
-
 
     <br /><br /> <br /><br />
 
     <div class="custGalleryFilter">
         <hFilter>
             Filter Juice By Category &nbsp;&nbsp; 
-        </hFilter>
+        <%--</hFilter>--%>
         <asp:DropDownList ID="custGalleryFilter" CssClass="filterDropdown" runat="server" OnSelectedIndexChanged="custGalleryFilter_SelectedIndexChanged">
             <asp:ListItem>All</asp:ListItem>
             <asp:ListItem>Natural</asp:ListItem>

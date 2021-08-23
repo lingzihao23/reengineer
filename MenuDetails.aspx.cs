@@ -18,31 +18,6 @@ namespace Web_Asgm
             {
                 Response.Redirect("Login.aspx");
             }
-
-            foreach (DataListItem Item in artDetailsList.Items)
-            {
-
-                ImageButton btnAddWish = (ImageButton)Item.FindControl("btnAddWish");
-                Label artIDlbl = (Label)Item.FindControl("artIDlbl");
-                int artID = int.Parse(artIDlbl.Text);
-                string strCon = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-                SqlConnection connect;
-                connect = new SqlConnection(strCon);
-                connect.Open();
-                SqlDataAdapter da = new SqlDataAdapter("Select artID From WishlistData where artID=" + artID, connect);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows.Count.ToString() == "0")
-                {
-                    btnAddWish.ImageUrl = "media files/wishlistAdd.png";
-                }
-                else
-                {
-                    btnAddWish.ImageUrl = "media files/wishlistAdded.png";
-                    btnAddWish.Enabled = false;
-                }
-
-            }
         }
 
         protected void btnAddCart_Click(object sender, EventArgs e)
@@ -116,47 +91,6 @@ namespace Web_Asgm
             }
 
         }
-
-        protected void btnAddWish_Click(object sender, EventArgs e)
-        {
-
-            int userid = Convert.ToInt32(Session["UserID"]);
-            foreach (DataListItem Item in artDetailsList.Items)
-            {
-                ImageButton btnAddWish = (ImageButton)Item.FindControl("btnAddWish");
-                Label artIDlbl = (Label)Item.FindControl("artIDlbl");
-
-                int artID = int.Parse(artIDlbl.Text);
-
-                string strCon = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-                SqlConnection connect;
-                connect = new SqlConnection(strCon);
-                connect.Open();
-                SqlDataAdapter da = new SqlDataAdapter("Select artID From WishlistData where artID=" + artID, connect);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows.Count.ToString() == "0")
-                {
-                    SqlCommand addWishlist = new SqlCommand("Insert into WishlistData Values (@UserID, @artIDlbl)", connect);
-                    addWishlist.Parameters.AddWithValue("@artIDlbl", artID);
-                    addWishlist.Parameters.AddWithValue("@UserID", Session["UserID"]);
-                    addWishlist.ExecuteNonQuery();
-                    Response.Write("<script>alert('The item is added in the wishlist')</script>");
-                    connect.Close();
-                }
-                else
-                {
-                    btnAddWish.ImageUrl = "media files/wishlistAdded.png";
-                    btnAddWish.Enabled = false;
-                    Response.Write("<script>alert('The item already exist in the wishlist')</script>");
-
-                }
-
-            }
-        }
-
-       
-
 
     }
 }

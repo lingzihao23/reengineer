@@ -67,10 +67,6 @@
             </table>
             <br /><br />
             <table class="detailBtnTable" align="center">
-                <tr>
-                   <td class="detailBtn"><asp:ImageButton ID="btnAddWish" runat="server" Text="Add To Wishlist" ImageUrl="media files/wishlistAdd.png" CommandArgument='<%#Eval("ArtID") %>' OnClick="btnAddWish_Click" CommandName="AddWishlist" CssClass="detailBtn" Session="addWishlist"></asp:ImageButton></td>
-                </tr>
-                <tr><td>&nbsp;</td></tr>
                 <tr><td>&nbsp;</td></tr>
                 <tr><td>&nbsp;</td></tr>
                 <tr>
