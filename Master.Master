@@ -22,7 +22,7 @@
 
             <div id="headerNavi">			    
                 <div id="menuNav">
-                    <asp:Button CssClass="headerNaviBtn" ID="homeBtn" runat="server" Text="Home" PostBackUrl="~/Homepage.aspx" />
+                    <asp:Button CssClass="headerNaviBtn" ID="homeBtn" runat="server" Text="Home" PostBackUrl="" />
                     <asp:Button CssClass="headerNaviBtn" ID="galleryBtnCust" runat="server" Text="Juice Menu" PostBackUrl="~/Menu.aspx" />
                     <asp:Button CssClass="headerNaviBtn" ID="cartBtn" runat="server" Text="My Cart" PostBackUrl="~/Cart.aspx" />
                     <asp:Button CssClass="headerNaviBtn" ID="profileBtn" runat="server" Text="My Profile" PostBackUrl=""/>
