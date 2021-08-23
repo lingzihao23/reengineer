@@ -66,7 +66,7 @@
         </FooterTemplate>
     </asp:Repeater>
     <br><br>
-<asp:LinkButton ID="btnBack" class="button" Text="Menu" runat="server" PostBackUrl="~/CustomerGallery.aspx"></asp:LinkButton>
+<asp:LinkButton ID="btnBack" class="button" Text="Menu" runat="server" PostBackUrl="~/Menu.aspx"></asp:LinkButton>
     <br><br>
         </div>
 </asp:Content>

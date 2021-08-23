@@ -26,7 +26,7 @@ namespace PennyJuice
             string grandTotal = Request.QueryString["grandTotal"];
             SqlDataSource1.SelectParameters.Add("paymentID", paymentID);
 
-            checkoutPaidlbl.Text = "RM" + grandTotal.ToString() + ".00";
+            checkoutPaidlbl.Text = "$" + grandTotal.ToString() + ".00";
 
             if (!IsPostBack)
                 SendMail();
@@ -48,7 +48,7 @@ namespace PennyJuice
         protected void returnMenu_click(object sender, EventArgs e)
         {
             
-            Response.Redirect("CustomerGallery.aspx");
+            Response.Redirect("Menu.aspx");
         }
 
         private void SendMail()

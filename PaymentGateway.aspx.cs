@@ -22,7 +22,7 @@ namespace PennyJuice
         {
             string grandTotal = Request.QueryString["grandTotal"];
             string grandQuan = Request.QueryString["grandQuan"];
-            paymentTotal.Text = "RM" + grandTotal.ToString() + ".00";
+            paymentTotal.Text = "$" + grandTotal.ToString() + ".00";
             paymentQuan.Text = grandQuan.ToString();
         }
 

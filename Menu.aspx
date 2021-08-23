@@ -61,7 +61,7 @@
                     </tr>
                     <tr>
                         <td class="artInfo1">Price: </td>
-                        <td class="artInfo2">RM <%#Eval("Price") %></td>
+                        <td class="artInfo2">$ <%#Eval("Price") %></td>
                         <caption>
                             <br />
                         </caption>

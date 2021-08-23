@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Web_Asgm
+namespace PennyJuice
 {
 
 
-    public partial class CustomerGallery
+    public partial class Menu
     {
 
         /// <summary>

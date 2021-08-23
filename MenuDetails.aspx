@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="MenuDetails.aspx.cs" Inherits="Web_Asgm.ArtDetails" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="MenuDetails.aspx.cs" Inherits="PennyJuice.MenuDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="server">
     
@@ -48,7 +48,7 @@
 
                 <tr>
                     <td class="detailInfo">Price:</td>
-                    <td>RM
+                    <td>$
                         <asp:Label ID="viewPricelbl" runat="server" Text='<%# Eval("Price") %>'></asp:Label>
                     </td>
                 </tr>

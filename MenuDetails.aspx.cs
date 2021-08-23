@@ -8,9 +8,9 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 
-namespace Web_Asgm
+namespace PennyJuice
 {
-    public partial class ArtDetails : System.Web.UI.Page
+    public partial class MenuDetails : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
