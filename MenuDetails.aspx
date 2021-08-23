@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="MenuDetails.aspx.cs" Inherits="Web_Asgm.ArtDetails" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Master.Master" CodeBehind="MenuDetails.aspx.cs" Inherits="PennyJuice.MenuDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="server">
     
