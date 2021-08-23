@@ -37,8 +37,8 @@
 
     <footer>
         <ul id="leftList">
-        <li><a class="aboutUsLink" href="AboutUs.aspx"> About Us</a></li>
-        <li><a class="aboutUsLink" href="ContactUs.aspx">Contact Us</a></li>
+        <li><a class="aboutUsLink" href=""> About Us</a></li>
+        <li><a class="aboutUsLink" href="">Contact Us</a></li>
         </ul>
 
         <ul id="rightList">
