@@ -1,10 +1,4 @@
 ﻿
-.bckground {
-    background-image: url('media files/galleryBackground.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 .imglayout {
     width: 160px;
     height: 180px;

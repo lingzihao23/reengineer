@@ -1,0 +1,125 @@
+﻿
+
+.wishlist {
+    background-image: url("media files/galleryBackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wishlist-container {
+    margin: 5px;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+    .wishlist-container h1 {
+        color: black;
+        font-size: larger;
+        font-family:'Comic Sans MS';
+        font-weight: bolder;
+        display: inline-block;
+    }
+
+    .wishlist-container h1::after {
+        content: " ";
+        display:block;
+        width:0;
+        height:2px;
+        transition:width .3s
+    }
+
+
+
+ .wishlist-container h1:hover::after {
+        width:9%;
+        transition:width .3s
+       
+    }
+
+.selectedArt-container {
+    font-family: 'Times New Roman';
+    margin: 20px 100px;
+    padding: 80px;
+    width: 85%;
+}
+
+.wishlist-table {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding:20px;
+    width:100%;
+}
+
+.wislist-info h2 {
+    color: black;
+    font-family: 'Times New Roman';
+    padding: 10px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: large;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.gvWishlistStyle {
+    text-align:center;
+    align-items: center;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 50px;
+    margin-bottom:100px;
+    border:thick;
+   
+}
+
+.imgBtnStyle {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.gvDelBtnStyle {
+    width: 50%;
+    height: 60%;
+    position: relative;
+}
+
+.gvAddCartBtnStyle {
+    width: 50%;
+    height: 30%;
+    position: relative;
+}
+
+
+.wishlistImage{
+    padding:10px;
+    margin:10px;
+}
+
+.btnBackGallery {
+    background-image: url('media files/btnConShop.jpg');
+    text-decoration:none;
+    margin:50px;
+}
+
+.btnClearList {
+    background-image: url('media files/btnClearList.jpg');
+    text-decoration: none;
+    margin: 50px;
+}
+
+.cartFrmWishlist {
+    position:relative;
+    text-align:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:larger;
+    padding-left:180px;
+}
+
+.vsWishlist {
+    padding-left: 500px;
+    position: relative;
+}

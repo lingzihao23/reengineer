@@ -12,6 +12,12 @@ body {
     overflow: inherit;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-image: url('media files/wood2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
 }
 
 header {
@@ -19,7 +25,7 @@ header {
     z-index: 1;
     height: 18%;
     width: 100%;
-    background-color:lightskyblue;
+    background-color: lightskyblue;
     padding: 1%;
 }
 
