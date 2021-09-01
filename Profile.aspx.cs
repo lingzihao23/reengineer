@@ -16,7 +16,7 @@ namespace PennyJuice
             if (Session["userIdentityType"] != null)
             {
                 if (Session["userIdentityType"].ToString() == "A")
-                    MasterPageFile = "~/M.Master";
+                    MasterPageFile = "~/Master.Master";
 
             }
         }

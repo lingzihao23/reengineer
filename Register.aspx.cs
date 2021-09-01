@@ -118,7 +118,7 @@ namespace PennyJuice
 
                 loginData.Close();
 
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Successfully Registered');window.location ='../Homepage.aspx';", true);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Successfully Registered');window.location ='../Menu.aspx';", true);
                 // Response.Redirect("Homepage.aspx");
             }
 
